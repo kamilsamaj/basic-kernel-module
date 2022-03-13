@@ -1,2 +1,1 @@
-
-obj-m := main.o
+obj-m := basic_kernel_module.o

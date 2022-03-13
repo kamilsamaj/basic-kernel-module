@@ -7,11 +7,12 @@
 #include <linux/init.h>
 
 static int __init init_hello(void) {
-    printk(KERN_ALERT "Custom kernel module successfully loaded\n");
+    printk(KERN_WARNING "Custom kernel module successfully loaded\n");
     return 0;
 }
 
 static void __exit cleanup_hello(void) {
+    printk(KERN_WARNING "Custom kernel module successfully removed\n");
 }
 
 module_init(init_hello);
